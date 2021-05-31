@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List Application</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+        <div class="container-fluid">
+            <div class="heading pt-5">
+                <i class="icofont-book text-warning"></i>
+                <h2>Add Your <span class="text-warning">Book</span>List</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <form id="form">
+                <div>
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" id="title" class="form-control" placeholder="Title" required>
+                </div>
+
+                <div>
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" class="form-control " id="author" placeholder="Author" required>
+                </div>
+
+                <div>
+                    <label for="year" class="form-label">Year</label>
+                    <input type="number" class="form-control" id="year" placeholder="Year" required>
+                </div>
+
+                <button id="btn" class="btn btn-warning w-100 mt-4" type="submit">Add Book</button>
+            </form>
+
+            <table class="table table-striped mt-5 text-center">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+                <tbody id="book-list">
+
+                </tbody>
+            </table>
+        </div>
+    
+       
+
+
+<!-- script linkup  -->
+    <script src="./bootstrap/popper.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: rgb(3, 3, 36);
+    color: white;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading i{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 55px;
+}
+.heading h2{
+    font-size: 34px;
+   
+}
+@media (max-width: 576px) {
+    .heading h2{
+        font-size: 17px !important;
+    }
+    .heading i{
+        font-size: 30px !important;
+    }
+    th{
+        font-size: 13px;
+    }
+}
